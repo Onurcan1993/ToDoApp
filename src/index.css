@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+
+}
+
+.custom-placeholder::placeholder {
+  font-size: 12px;
+  color: grey;
+
+}
+
+.custom-datepicker {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border:none;
+  border-radius: 10px;
+}
+
+.react-datepicker__tab-loop,
+.react-datepicker__header,
+.react-datepicker__month-container,
+.react-datepicker__day,
+.react-datepicker__time-container,
+.react-datepicker__time {
+  background-color: white;
+  color: black;
+}
+
+.react-datepicker__time-list {
+  background-color: white;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__time-list-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+.material-input{
+  color:red;
+}
