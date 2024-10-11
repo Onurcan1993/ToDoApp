@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <TodoContext.Provider value={[newDatas, setNewDatas]}>
-      <div className="flex flex-col justify-center gap-y-4">
+      <div className="flex flex-col justify-center sm:gap-y-4 gap-y-1">
         <Title />
         <TaskHeader />
         {newDatas.active && <TaskDetailes list={list} setList={setList} />}

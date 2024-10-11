@@ -23,8 +23,8 @@ export default function Task({ item, list, setList }) {
             className="flex w-4/5 m-auto rounded-md flex-row justify-around  bg-gray-200 hover:bg-gray-500 p-4"
             sx={{ color: "black" }}
           >
-            <div className="w-full flex flex-row justify-between items-center">
-              <div className="flex flex-row gap-2 items-center">
+            <div className="w-full flex sm:flex-row flex-col justify-between items-center">
+              <div className="flex sm:flex-row flex-col gap-2 items-center">
                 <CancelPresentationRoundedIcon
                   className="cursor-pointer rounded-md transition-colors hover:bg-gray-400"
                   onClick={deleteHandler}
@@ -35,8 +35,8 @@ export default function Task({ item, list, setList }) {
                   {item.name} : {item.mission}
                 </span>
               </div>
-              <div className="w-2/5 flex flex-row justify-between items-center">
-                <div className="flex items-center gap-2">
+              <div className="w-2/5 flex sm:flex-row flex-col justify-between items-center">
+                <div className="flex items-center sm:flex-row flex-col gap-2">
                   <AccessTimeRoundedIcon />
                   {item.date}
                 </div>

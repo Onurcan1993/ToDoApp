@@ -24,7 +24,7 @@ function TaskDetailes({ setList, list }) {
   };
 
   return (
-    <div className="w-3/5 flex flex-col m-auto  p-4 bg-gray-300 rounded-md gap-y-4">
+    <div className="sm:w-3/5 w-full flex flex-col m-auto  p-4 bg-gray-300 rounded-md gap-y-4">
       <button
         onClick={onClear}
         className="flex flex-row justify-end bg-gray-300"
@@ -33,7 +33,7 @@ function TaskDetailes({ setList, list }) {
           <CancelPresentationRoundedIcon />
         </span>
       </button>
-      <div className="select-none bg-transparent font-medium text-3xl">
+      <div className="select-none bg-transparent font-medium  text-center sm:text-3xl text-xl">
         Task Details
       </div>
       <SelectRegion>
@@ -41,7 +41,10 @@ function TaskDetailes({ setList, list }) {
         <NameTextFields keyName="mission" name={"Mission"} />
         <BasicSelect />
       </SelectRegion>
-      <BasicDatePicker />
+      <div className="flex sm:justify-start justify-center items-center">
+        <BasicDatePicker />
+      </div>
+
       <TextArea />
       <div className="flex items-center justify-end bg-inherit gap-x-3 w-5/6">
         <button

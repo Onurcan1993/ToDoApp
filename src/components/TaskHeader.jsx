@@ -8,14 +8,18 @@ function TaskHeader() {
   };
 
   return (
-    <div className="flex flex-row justify-between w-4/5 text-xl m-auto border-b-2 py-1 border-gray-200">
-      <span className=" py-3 font-medium text-3xl">Tasks</span>
+    <div className="flex flex-col sm:flex-row sm:justify-between justify-center sm:items-center sm:w-4/5 w-full text-xl m-auto  border-b-2 py-1 border-gray-200">
+      <span className=" py-3 font-medium sm:text-3xl text-xl text-center">
+        Tasks
+      </span>
       <button
         onClick={headerHandler}
-        className="bg-green-900  items-center px-5 py-3 cursor-pointer hover:bg-green-800 rounded-md flex justify-between gap-4  text-white"
+        className="bg-green-900  items-center sm:py-4 sm:px-2  cursor-pointer hover:bg-green-800 rounded-md flex sm:justify-between justify-center gap-4  text-white"
       >
-        <span className="bg-none bg-transparent text-3xl">+</span>
-        <span className="bg-none bg-transparent">Add Task</span>
+        <span className="bg-none bg-transparent sm:text-3xl text-md">+</span>
+        <span className="bg-none bg-transparent sm:text-xl text-sm">
+          Add Task
+        </span>
       </button>
     </div>
   );

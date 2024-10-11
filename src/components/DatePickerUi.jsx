@@ -26,7 +26,7 @@ export default function BasicDatePicker() {
           label="Select a date"
           value={selectedDate}
           onChange={handleDateChange}
-          sx={{ width: "200px" }}
+          sx={{ width: "250px" }}
           minDate={dayjs()}
         />
       </DemoContainer>
